@@ -20,5 +20,8 @@ recall <- function(x, idx, indicative = c("high", "low")) {
   decreasing <- indicative == "high"
   x_ordered <- order(x = x, decreasing = decreasing)
   # compute recall
-  sapply(seq_along(x_ordered), function(i) mean(idx %in% x_ordered[seq_len(i)]))
+  # (note that recall is 0 when no careless respondents are detected)
+  c(0,
+    sapply(seq_along(x_ordered),
+           function(i) mean(idx %in% x_ordered[seq_len(i)])))
 }

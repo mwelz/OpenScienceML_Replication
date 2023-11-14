@@ -86,7 +86,7 @@ for (design in designs) {
               # return data frame with current recall curve
               data.frame(Method = method,
                          Prevalence = prop_careless[i],
-                         Identified = seq_along(mean_recall),
+                         Identified = seq_along(mean_recall) - 1, # start with 0
                          Recall = mean_recall)
             }
 
