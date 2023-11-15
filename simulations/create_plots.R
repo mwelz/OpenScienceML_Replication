@@ -44,7 +44,7 @@ for (design in designs) {
           data.frame(Prevalence = p,
                      Identified = seq_n,
                      Recall = recall)
-        }, seq_n = seq_len(n))
+        }, seq_n = seq(from = 0, to = n))
         # put data frames together
         df_ideal_recall <- do.call(rbind, ideal_recall_list)
 
