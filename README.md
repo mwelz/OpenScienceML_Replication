@@ -124,7 +124,7 @@ IRV is the best performing method, although its recall curve becomes much flatte
 
 ## Discussion
 
-Although there is considerable heterogeneity in the performance of the methods across the investigated simulation designs, the autoencoder overall outperforms the benchmark methods regarding the identification of inconsistent careless respondents, while the benchmark methods exhibit more variability in their performance across simulation designs. Moreover, the excellent performance of the autoencoder remains stable for relatively high prevalence of inconsistent careless responding. 
+There is considerable heterogeneity in the performance of the methods across the investigated simulation designs. Overall, the autoencoder outperforms the benchmark methods regarding the identification of inconsistent careless respondents, while the benchmark methods exhibit more variability in their performance across simulation designs. Moreover, the excellent performance of the autoencoder remains stable for relatively high prevalence of inconsistent careless responding. 
 
 On the other hand, the autoencoder did not perform well for the two types of invariable careless responding, which is expected since the architecture of the autoencoder is designed to filter random noise rather than repeating patterns. Although the internal structure of the two types of invariable careless responses is different from the internal structure of the attentive responses, there is structure that can be learned by the autoencoder, resulting in overlapping mean squared reconstruction errors (which are used as carelessness scores for the autoencoder) for careless and attentive respondents.
 
