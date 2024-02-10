@@ -14,7 +14,7 @@ MSRE <- function(x, reconstructed, num_likert) {
   # in case of an error, return NULL
   tryCatch({
     # average over the individual squared item reconstruction errors
-    rowMeans(((x - reconstructed) / num_likert)^2)
+    rowMeans(((x - reconstructed) / (num_likert-1))^2)
   }, error = function(e) NULL)
 }
 
