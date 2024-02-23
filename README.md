@@ -1,6 +1,8 @@
 # Online supplement and replication files
 
-This repository presents all results and provides replication files of the simulation experiment in the working paper "[*Open Science Perspectives on Machine Learning for the Identiﬁcation of Careless Responding: A New Hope or Phantom Menace?*](https://psyarxiv.com/8t2cy)" by Andreas Alfons and Max Welz. 
+This repository presents all results and provides replication files of the simulation experiment in our paper:
+
+Alfons, A. & Welz, M. (2024) Open Science Perspectives on Machine Learning for the Identiﬁcation of Careless Responding: A New Hope or Phantom Menace? *Social and Personality Psychology Compass*, **18**(2), e12941. doi: [10.1111/spc3.12941](https://doi.org/10.1111/spc3.12941)
 
 The simulation experiment compares the performance of six methods for the identification of careless respondents in a hypothetical survey. We refer to this working paper for descriptions of each considered method, as well as a definition of our performance measure (recall curves). As the working paper only reports the results of a selected baseline simulation design, the results remaining simulation designs are discussed in detail here.
 
